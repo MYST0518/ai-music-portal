@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Music Portal | Schedule Hub</title>
+    <meta name="description" content="AI音楽イベントのポータルサイト。最新のコンテスト、ライブ、勉強会情報を網羅。">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-glow"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">AI Music <span>Portal</span></div>
+            <div class="nav-links">
+                <a href="#calendar" class="active">Schedule</a>
+                <div class="labo-badge">
+                    <span class="labo-name">Coedo Music Labo</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="fade-in">Discover the Future of <br><span class="text-gradient">AI Music Events</span></h1>
+                <p class="subtitle fade-in delay-1">最新のAI音楽イベント情報をカレンダーでチェック。</p>
+            </div>
+        </section>
+
+        <section id="calendar" class="calendar-section container">
+            <div class="calendar-wrapper glass fade-in delay-2">
+                <iframe
+                  src="https://script.google.com/macros/s/AKfycbxEFXYDzYnK9T8AOwWISFoBfXcTYLz2WuKdBTjQ1hW_DLvawgLub6_YG-yoezmCCcuibw/exec"
+                  width="100%"
+                  height="850"
+                  style="border: 0; border-radius: 24px; overflow: hidden; background-color: #050505;"
+                  loading="lazy"
+                  allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2026 AI Music Portal. Powered by Coedo Music Labo.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
