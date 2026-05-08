@@ -15,12 +15,13 @@
 </head>
 <body>
     <div class="bg-glow"></div>
+    <div class="particles-container" id="particles"></div>
     
     <header>
         <nav>
             <div class="logo">AI Music <span>Portal</span></div>
             <div class="nav-links">
-                <a href="#calendar" class="active">Schedule</a>
+                <a href="#calendar" class="active">Live Schedule</a>
                 <div class="labo-badge">
                     <span class="labo-name">Coedo Music Labo</span>
                 </div>
@@ -31,22 +32,18 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="fade-in">Discover the Future of <br><span class="text-gradient">AI Music Events</span></h1>
-                <p class="subtitle fade-in delay-1">最新のAI音楽イベント情報をカレンダーでチェック。</p>
+                <h1 class="fade-in">Experience the Future of <br><span class="text-gradient">AI Music</span></h1>
+                <p class="subtitle fade-in delay-1">最新のAI音楽イベント・配信スケジュールをリアルタイムに集約。</p>
             </div>
         </section>
 
         <section id="calendar" class="calendar-section container">
-            <div class="calendar-wrapper glass fade-in delay-2">
-                <!-- Single consolidated calendar with Agenda-like view focus -->
-                <iframe
-                  src="https://calendar.google.com/calendar/embed?height=800&wkst=1&bgcolor=%23050505&ctz=Asia%2FTokyo&mode=AGENDA&src=ZjUwMzVjNWMwOWRhMzZhYWEwNGFhMGFkYmZiN2QyZTJiYjgxMjNmNTI1MjhlY2M3Mzk4ODYyODA3ZDYwMDIwZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4&showNav=1&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0"
-                  width="100%"
-                  height="800"
-                  style="border: 0; border-radius: 24px; overflow: hidden; background-color: #050505;"
-                  loading="lazy"
-                  allowfullscreen>
-                </iframe>
+            <div id="eventContainer" class="event-grid">
+                <div class="loading-state">
+                    <div class="loader"></div>
+                    <p>Fetching the future vibes...</p>
+                </div>
+                <!-- Events will be injected here -->
             </div>
         </section>
     </main>
