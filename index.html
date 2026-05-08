@@ -21,7 +21,8 @@
         <nav>
             <div class="logo">AI Music <span>Portal</span></div>
             <div class="nav-links">
-                <a href="#calendar" class="active">Live Schedule</a>
+                <a href="#events" class="active">Live Schedule</a>
+                <a href="#full-calendar">Monthly View</a>
                 <div class="labo-badge">
                     <span class="labo-name">Coedo Music Labo</span>
                 </div>
@@ -30,6 +31,7 @@
     </header>
 
     <main>
+        <!-- ヒーローセクション -->
         <section class="hero">
             <div class="container">
                 <h1 class="fade-in">Experience the Future of <br><span class="text-gradient">AI Music</span></h1>
@@ -37,13 +39,32 @@
             </div>
         </section>
 
-        <section id="calendar" class="calendar-section container">
+        <!-- イベントタイムライン -->
+        <section id="events" class="calendar-section container">
             <div id="eventContainer" class="event-grid">
                 <div class="loading-state">
                     <div class="loader"></div>
                     <p>Fetching the future vibes...</p>
                 </div>
                 <!-- Events will be injected here -->
+            </div>
+        </section>
+
+        <!-- 【復活！】フルカレンダー埋め込み -->
+        <section id="full-calendar" class="calendar-section container" style="margin-top: 4rem;">
+            <div class="section-title fade-in">
+                <h2>Full <span class="text-gradient">Calendar</span></h2>
+                <p>月ごとのスケジュールはこちらから確認できます。</p>
+            </div>
+            <div class="calendar-wrapper glass fade-in delay-1" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 34px; padding: 10px; margin-top: 2rem;">
+                <iframe
+                  src="https://script.google.com/macros/s/AKfycbxEFXYDzYnK9T8AOwWISFoBfXcTYLz2WuKdBTjQ1hW_DLvawgLub6_YG-yoezmCCcuibw/exec"
+                  width="100%"
+                  height="850"
+                  style="border: 0; border-radius: 24px; overflow: hidden; background-color: #050505;"
+                  loading="lazy"
+                  allowfullscreen>
+                </iframe>
             </div>
         </section>
     </main>
